@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    color: #58a6ff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+nav {
+    margin: 20px 0;
+    background: #161b22;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #c9d1d9;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #21262d;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #161b22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #c9d1d9;
+    padding-bottom: 10px;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section#proyectos ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#proyectos ul li {
+    margin-bottom: 20px;
+}
+
+section#proyectos ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section#proyectos ul li a:hover {
+    color: #c9d1d9;
+    transform: scale(1.1);
+}
+
+section#proyectos ul li p {
+    margin: 5px 0 0 15px;
+    color: #c9d1d9;
+    font-size: 1em;
+}
+
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    background: #161b22;
+    color: #c9d1d9;
+    width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #c9d1d9;
+    transform: scale(1.1);
+}
+
+a {
+    color: #58a6ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c9d1d9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px #58a6ff, 0 0 20px #58a6ff, 0 0 30px #58a6ff, 0 0 40px #58a6ff, 0 0 50px #58a6ff;
+    }
+    to {
+        text-shadow: 0 0 20px #58a6ff, 0 0 30px #58a6ff, 0 0 40px #58a6ff, 0 0 50px #58a6ff, 0 0 60px #58a6ff;
+    }
+}
+
+/* Estilos para responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
