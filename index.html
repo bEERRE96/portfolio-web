@@ -1,184 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Brian Diaz | Portfolio Full Stack</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
   <header>
-    <h1>Brian Diaz</h1>
-    <p>Desarrollador Full Stack</p>
+    <nav class="container">
+      <div class="logo">B.DIAZ<span>_</span></div>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">01. Sobre Mí</a></li>
+        <li><a href="#proyectos">02. Proyectos</a></li>
+        <li><a href="#experiencia">03. Experiencia</a></li>
+        <li><a href="#certificaciones">04. Certificaciones</a></li>
+      </ul>
+    </nav>
+    <div class="hero container">
+      <div class="hero-content">
+        <span class="highlight-code">developer.fullstack</span>
+        <h1>BRIAN <span>DIAZ</span></h1>
+        <p>Desarrollador enfocado en la creación de aplicaciones escalables, seguras y eficientes.</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn-primary">Ver Portfolio</a>
+        </div>
+      </div>
+    </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#sobre-mi">Sobre Mí</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#certificaciones">Certificaciones</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-    </ul>
-  </nav>
-  <section id="sobre-mi">
-    <h2>Sobre Mí</h2>
-    <p>Desarrollador Full Stack con experiencia en front-end y back-end, apasionado por la tecnología y la programación.
-      Busco incorporarme a un equipo dinámico donde pueda aplicar y expandir mis conocimientos, contribuyendo al
-      desarrollo de proyectos innovadores. Destacado por mi capacidad para resolver problemas, trabajar en equipo y
-      adaptarme rápidamente a nuevas tecnologías.</p>
-  </section>
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li><strong>Lenguajes de Programación:</strong> JavaScript, HTML, CSS, SQL, Java</li>
-      <li><strong>Frameworks y Librerías:</strong> ReactJS, NodeJS, Bootstrap, SASS</li>
-      <li><strong>Herramientas y Plataformas:</strong> Git/GitHub, Vite, MySQL, ERP/HMS, Excel</li>
-      <li><strong>Inglés:</strong> Intermedio</li>
-    </ul>
-  </section>
-  <section id="experiencia">
-    <h2>Experiencia</h2>
-    <ul>
-      <li>
-        <strong>Arcanus Games</strong> | Desarrollador Web<br>
-        <em>Junio 2025 - Actualidad</em>
-        <ul>
-          <li>
-            Desarrollo integral de plataforma web para el sector gaming, participando tanto
-            en el front-end como en el back-end.
-          </li>
-          <li>
-            Implementación de autenticación y autorización mediante JWT, cifrado de
-            contraseñas con Bcrypt y protección de rutas.
-          </li>
-          <li>
-            Diseño y desarrollo de API REST optimizada con Node.js y Express.
-          </li>
-          <li>
-            Integración con servidor de juego utilizando WebSockets para comunicación en
-            tiempo real.
-          </li>
-          <li>
-            Desarrollo de panel administrativo con sistema de roles y permisos.
-          </li>
-          <li>
-            Tecnologías utilizadas: React, Node.js, Express, MySQL, WebSockets, JWT,
-            Bcrypt, Express Rate Limit, Node-Cache.
-          </li>
-        </ul>
-      </li>
 
-      <li>
-        <strong>Unión Personal Civil de la Nación – Accord Salud</strong>
-        <ul>
-          <li>
-            <strong>Analista Senior</strong> (Agosto 2022 - Actualidad)<br>
-            Gestión y análisis de liquidaciones de prestadores dentro del área de cuentas a
-            pagar. Trabajo con grandes volúmenes de datos, validaciones de información,
-            aplicación de notas de crédito, pagos y anticipos. Manejo de órdenes de compra y
-            remitos mediante sistemas ERP/HMS.
-          </li>
-          <li>
-            <strong>Referente de Facturación</strong> (Junio 2021 - Julio 2022)<br>
-            Referente del sector de facturación, con liderazgo de un equipo de 5 personas.
-            Coordinación, control de tareas, resolución de incidencias y optimización de
-            procesos administrativos.
-          </li>
-          <li>
-            <strong>Administrativo</strong> (Abril 2017 - Mayo 2021)<br>
-            Tareas administrativas en el área de facturación y mesa de entradas. Recepción,
-            control e ingreso de facturas en sistema ERP/HMS, asegurando consistencia y
-            trazabilidad de la información.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-  <section id="certificaciones">
-    <h2>Certificaciones</h2>
-    <ul>
-      <li>Desarrollador JavaScript FullStack - Codo a Codo 4.0</li>
-      <li>SQL - CoderHouse</li>
-      <li>Desarrollo front-end - CoderHouse</li>
-      <li>Desarrollo web - freeCodeCamp</li>
-      <li>Algoritmos de JavaScript y Estructuras de Datos - freeCodeCamp</li>
-      <li>Desarrollador Java FullStack - Codo a Codo 4.0</li>
-      <li>Excel Avanzado - Educación IT</li>
-      <li>PowerBI - Educación IT</li>
-    </ul>
-  </section>
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/bEERRE96/plataforma-trainee" target="_blank">Plataforma de Gestión de Usuarios</a>
-        <p>Proyecto de Plataforma de Gestión de Usuarios desarrollado con Express y React. Permite la gestión de
-          usuarios, planes y ejercicios. Incluye paneles para administradores y usuarios.</p>
-      </li>
-      <li>
-        <a href="https://github.com/bEERRE96/Calculadora" target="_blank">Calculadora</a>
-        <p>Es una calculadora simple desarrollada con HTML, CSS y JavaScript.</p>
-      </li>
-      <li>
-        <a href="https://github.com/bEERRE96/formulario-pago" target="_blank">Formulario de Pago</a>
-        <p>Aplicación web simple para gestionar expedientes legales. Utiliza HTML, CSS y JavaScript para capturar y
-          mostrar detalles de los expedientes en una tabla interactiva.</p>
-      </li>
-      <li>
-        <a href="https://github.com/bEERRE96/generador-qr" target="_blank">Generador de Códigos QR</a>
-        <p>Generador de códigos QR interactivo con mensaje de bienvenida. Permite ingresar una URL y generar un código
-          QR correspondiente.</p>
-      </li>
-      <li>
-        <a href="https://github.com/bEERRE96/Memotest" target="_blank">Memotest</a>
-        <p>Juego de memoria implementado con HTML, CSS y JavaScript. Los jugadores deben encontrar todas las
-          coincidencias entre las cartas.</p>
-      </li>
-      <li>
-        <a href="https://github.com/bEERRE96/Form-MultipleChoice" target="_blank">Formulario de Selección Múltiple</a>
-        <p>Formulario interactivo de selección múltiple desarrollado con HTML, CSS y JavaScript. Permite a los usuarios
-          responder preguntas mediante opciones predefinidas.</p>
-      </li>
-      <li>
-        <a href="https://github.com/bEERRE96/Reproductor" target="_blank">Spotify Web App Clone</a>
-        <p>Aplicación web inspirada en la interfaz de Spotify. Desarrollada con JavaScript, HTML, CSS y Vite, permite la
-          reproducción de música y navegación entre listas de reproducción.</p>
-      </li>
-      <li>
-        <a href="https://github.com/ArcanusOnline/FrontendWeb" target="_blank">Arcanus Games</a>
-        <p>
-          Proyecto web desarrollado de forma integral desde cero para el sector gaming.
-          Responsable del diseño e implementación completa del front-end y back-end,
-          utilizando React y Node.js. Desarrollo de APIs REST, autenticación segura con
-          JWT y Bcrypt, comunicación en tiempo real mediante WebSockets y creación de
-          un panel administrativo con gestión de roles y permisos.
-        </p>
-      </li>
-      <li>
-        <a href="https://panel-tareas-administrador.vercel.app/" target="_blank">Plataforma de gestión de tareas</a>
-        <p> Panel de administración de tareas desarrollado como aplicación Full Stack,
-          que permite gestionar usuarios, asignar tareas y organizar flujos de trabajo
-          mediante roles diferenciados (administrador y usuario). El proyecto fue
-          construido con React en el frontend y Node.js/Express en el backend, incluyendo
-          autenticación, control de permisos y persistencia de datos. Está desplegado en
-          la nube (Vercel + Render) y refleja buenas prácticas de arquitectura, manejo de
-          estado y comunicación cliente-servidor.</p>
-      </li>
+  <main class="container">
+    
+    <section id="sobre-mi" class="about-section">
+      <h2 class="title-main"><span>01.</span> Sobre Mí</h2>
+      <div class="glass-box about-grid">
+        <div class="about-text">
+          <p>Desarrollador Full Stack con experiencia en front-end y back-end, apasionado por la tecnología y la programación. Busco incorporarme a un equipo dinámico donde pueda aplicar y expandir mis conocimientos, contribuyendo al desarrollo de proyectos innovadores. Destacado por mi capacidad para resolver problemas, trabajar en equipo y adaptarme rápidamente a nuevas tecnologías.</p>
+          <div class="skill-tags">
+            <strong>Stack Tecnológico:</strong>
+            <span class="tag">JavaScript</span> <span class="tag">HTML</span> <span class="tag">CSS</span>
+            <span class="tag">SQL</span> <span class="tag">Java</span> <span class="tag">ReactJS</span>
+            <span class="tag">NodeJS</span> <span class="tag">Bootstrap</span> <span class="tag">SASS</span>
+            <span class="tag">MySQL</span> <span class="tag">WebSockets</span> <span class="tag">Git/GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="proyectos">
+      <h2 class="title-main"><span>02.</span> Proyectos Destacados</h2>
+      
+      <div class="featured-project card-arcanus">
+        <div class="project-header">
+          <span class="label">Main Project / Gaming Sector</span>
+          <h3>Arcanus Games</h3>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <p>Desarrollo integral de plataforma web para el sector gaming, participando activamente tanto en el front-end como en el back-end.</p>
+            <ul class="tech-list">
+              <li><span>Real-Time:</span> Integración con servidor de juego mediante WebSockets para comunicación bidireccional.</li>
+              <li><span>Seguridad:</span> Implementación de JWT, cifrado Bcrypt y Rate Limit para protección contra ataques.</li>
+              <li><span>Arquitectura:</span> Diseño de API REST optimizada con Node.js, Express y persistencia en MySQL.</li>
+              <li><span>Gestión:</span> Panel administrativo avanzado con sistema dinámico de roles y permisos.</li>
+            </ul>
+          </div>
+          <div class="project-visual">
+            <div class="stack-badge">React + Node.js + WebSockets</div>
+            <a href="https://github.com/ArcanusOnline/FrontendWeb" target="_blank" class="btn-outline">Explorar Repositorio</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="featured-project">
+        <div class="project-header">
+          <span class="label">Full Stack App</span>
+          <h3>Plataforma de Gestión de Tareas</h3>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <p>Panel de administración desarrollado para gestionar usuarios y organizar flujos de trabajo mediante roles diferenciados. Incluye persistencia de datos y comunicación cliente-servidor bajo buenas prácticas de arquitectura.</p>
+          </div>
+          <div class="project-visual">
+             <a href="https://panel-tareas-administrador.vercel.app/" target="_blank" class="btn-outline">Demo en Vivo</a>
+          </div>
+        </div>
+      </div>
 
-    </ul>
-  </section>
+      <h3 class="sub-title-mono">Lab & Otros Desarrollos</h3>
+      <div class="other-grid">
+        <div class="mini-card">
+          <h4>Spotify Web App Clone</h4>
+          <p>Interfaz inspirada en Spotify con navegación dinámica y reproducción de música.</p>
+          <a href="https://github.com/bEERRE96/Reproductor" target="_blank">GitHub →</a>
+        </div>
+        <div class="mini-card">
+          <h4>Plataforma Trainee</h4>
+          <p>Gestión de usuarios, planes y ejercicios desarrollado con Express y React.</p>
+          <a href="https://github.com/bEERRE96/plataforma-trainee" target="_blank">GitHub →</a>
+        </div>
+        <div class="mini-card">
+          <h4>Memotest</h4>
+          <p>Juego de memoria interactivo con manipulación de lógica en JavaScript.</p>
+          <a href="https://github.com/bEERRE96/Memotest" target="_blank">GitHub →</a>
+        </div>
+        <div class="mini-card">
+          <h4>Generador de Códigos QR</h4>
+          <p>Generador interactivo que permite transformar URLs en códigos QR dinámicos.</p>
+          <a href="https://github.com/bEERRE96/generador-qr" target="_blank">GitHub →</a>
+        </div>
+        <div class="mini-card">
+          <h4>Formulario de Pago</h4>
+          <p>Captura y visualización de expedientes legales en tablas interactivas.</p>
+          <a href="https://github.com/bEERRE96/formulario-pago" target="_blank">GitHub →</a>
+        </div>
+        <div class="mini-card">
+          <h4>Multi-Choice Form</h4>
+          <p>Sistema de preguntas con opciones predefinidas y validación de respuestas.</p>
+          <a href="https://github.com/bEERRE96/Form-MultipleChoice" target="_blank">GitHub →</a>
+        </div>
+        <div class="mini-card">
+          <h4>Calculadora JS</h4>
+          <p>Desarrollo de lógica matemática y UI con Vanilla JavaScript.</p>
+          <a href="https://github.com/bEERRE96/Calculadora" target="_blank">GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2 class="title-main"><span>03.</span> Experiencia</h2>
+      <div class="experience-container">
+        
+        <div class="exp-block">
+          <div class="exp-info">
+            <h4>Arcanus Games</h4>
+            <span class="role">Desarrollador Web</span>
+            <span class="date">Junio 2025 - Actualidad</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Desarrollo integral de plataforma web (Front/Back) utilizando React y Node.js.</li>
+            <li>Implementación de arquitecturas de seguridad robustas (JWT, Bcrypt, Rate Limit).</li>
+            <li>Integración de WebSockets para comunicación en tiempo real entre cliente y servidor.</li>
+            <li>Optimización de base de datos MySQL y diseño de APIs REST escalables.</li>
+            <li>Creación de sistemas de gestión administrativa con control de acceso basado en roles.</li>
+          </ul>
+        </div>
+
+        <div class="exp-block">
+          <div class="exp-info">
+            <h4>UPCN - Accord Salud</h4>
+            <span class="role">Analista Senior / Referente</span>
+            <span class="date">2017 - Actualidad</span>
+          </div>
+          <p class="exp-summary">Gestión y análisis de liquidaciones mediante sistemas ERP/HMS, liderando equipos de trabajo y optimizando procesos administrativos de facturación.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificaciones">
+      <h2 class="title-main"><span>04.</span> Certificaciones</h2>
+      <div class="cert-grid">
+        <div class="cert-item"><strong>JS FullStack</strong> Codo a Codo</div>
+        <div class="cert-item"><strong>Java FullStack</strong> Codo a Codo</div>
+        <div class="cert-item"><strong>SQL</strong> CoderHouse</div>
+        <div class="cert-item"><strong>Front-End</strong> CoderHouse</div>
+        <div class="cert-item"><strong>Web Design</strong> freeCodeCamp</div>
+        <div class="cert-item"><strong>Excel / BI</strong> Educación IT</div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>Sígueme en:</p>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/brian-diaz-0226ab254/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/bEERRE96" target="_blank">GitHub</a></li>
-    </ul>
+    <div class="container footer-content">
+      <p>Brian Diaz // 2026</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/brian-diaz-0226ab254/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/bEERRE96" target="_blank">GitHub</a>
+      </div>
+    </div>
   </footer>
-</body>
 
+</body>
 </html>
